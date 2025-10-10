@@ -282,10 +282,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👤 Author
 
-**Diaa**
-- Portfolio: [Your Portfolio URL]
-- LinkedIn: [Your LinkedIn Profile]
-- Email: [Your Email]
+**Omar Essam**
+- 🌐 Portfolio: [https://engomaressam.github.io/predicting.bicycle.rental/](https://engomaressam.github.io/predicting.bicycle.rental/)
+- 💼 LinkedIn: [Add your LinkedIn profile here]
+- 📧 Email: [Add your email here]
+- 🐙 GitHub: [@engomaressam](https://github.com/engomaressam)
 
 ## 🙏 Acknowledgments
 
