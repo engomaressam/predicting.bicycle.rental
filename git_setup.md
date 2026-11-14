@@ -1,20 +1,20 @@
-# 🔄 Git Setup & Push to GitHub
+# Git Setup & Push to GitHub
 
 ## Step-by-Step Guide to Upload Your Project
 
-### 1️⃣ Initialize Git (if not already initialized)
+### 1 Initialize Git (if not already initialized)
 
 ```bash
 git init
 ```
 
-### 2️⃣ Add All Files
+### 2 Add All Files
 
 ```bash
 git add .
 ```
 
-### 3️⃣ Commit Everything
+### 3 Commit Everything
 
 ```bash
 git commit -m "Complete Data Science Capstone: Bicycle Rental Prediction with 86% accuracy
@@ -37,7 +37,7 @@ Key Results:
 Technologies: Python, scikit-learn, pandas, matplotlib, seaborn"
 ```
 
-### 4️⃣ Create New Repository on GitHub
+### 4 Create New Repository on GitHub
 
 1. Go to https://github.com/new
 2. Repository name: `bicycle-rental-prediction` or `predicting-bicycle-rental`
@@ -46,7 +46,7 @@ Technologies: Python, scikit-learn, pandas, matplotlib, seaborn"
 5. **Do NOT** initialize with README, .gitignore, or license (we already have them)
 6. Click "Create repository"
 
-### 5️⃣ Add Remote Origin
+### 5 Add Remote Origin
 
 Replace `yourusername` with your actual GitHub username:
 
@@ -60,7 +60,7 @@ Or use SSH (if you have SSH keys set up):
 git remote add origin git@github.com:yourusername/bicycle-rental-prediction.git
 ```
 
-### 6️⃣ Push to GitHub
+### 6 Push to GitHub
 
 For first push:
 
@@ -77,7 +77,7 @@ git push
 
 ---
 
-## 🔄 Complete Command Sequence (Copy-Paste)
+## Complete Command Sequence (Copy-Paste)
 
 ```bash
 # Initialize and commit
@@ -95,7 +95,7 @@ git push -u origin main
 
 ---
 
-## ✅ Verify Your Upload
+## Verify Your Upload
 
 After pushing, check these on GitHub:
 
@@ -108,12 +108,12 @@ After pushing, check these on GitHub:
 
 ---
 
-## 🎨 Make Your Repo Stand Out for Employers
+## Make Your Repo Stand Out for Employers
 
 ### Add GitHub Topics
 
 On your GitHub repository page:
-1. Click the gear icon ⚙️ next to "About"
+1. Click the gear icon next to "About"
 2. Add these topics:
    - `machine-learning`
    - `data-science`
@@ -142,7 +142,7 @@ Edit the README.md "Author" section with:
 
 ---
 
-## 📊 Repository Settings (Optional but Recommended)
+## Repository Settings (Optional but Recommended)
 
 ### Enable GitHub Pages (to showcase visualizations)
 
@@ -163,7 +163,7 @@ On the main repo page, click "About" settings:
 
 ---
 
-## 🔐 If You Need to Update Your Commit
+## If You Need to Update Your Commit
 
 Made a mistake? Update the last commit:
 
@@ -173,11 +173,11 @@ git commit --amend -m "Your new commit message"
 git push --force
 ```
 
-⚠️ **Warning:** Only use `--force` if you haven't shared the repository yet!
+**Warning:** Only use `--force` if you haven't shared the repository yet!
 
 ---
 
-## 🆘 Troubleshooting
+## Troubleshooting
 
 ### Error: "remote origin already exists"
 
@@ -218,7 +218,7 @@ git commit -m "Add Git LFS for model files"
 
 ---
 
-## 📝 Recommended Commit Message Format
+## Recommended Commit Message Format
 
 For future commits:
 
@@ -245,20 +245,20 @@ Impact: Enables more granular predictions"
 
 ---
 
-## 🚀 After Pushing to GitHub
+## After Pushing to GitHub
 
 ### Share Your Project!
 
 1. **LinkedIn Post:**
    ```
-   Excited to share my latest Data Science project! 🚴📊
+   Excited to share my latest Data Science project!
    
    Built a Machine Learning model to predict bike rental demand with 86% accuracy.
    
-   🔹 Trained 7 ML models, compared performance
-   🔹 Engineered 13 features from weather data
-   🔹 Achieved 86.25% R² score
-   🔹 Production-ready Random Forest model
+   Trained 7 ML models, compared performance
+   Engineered 13 features from weather data
+   Achieved 86.25% R² score
+   Production-ready Random Forest model
    
    Technologies: Python, scikit-learn, pandas, matplotlib
    
@@ -283,7 +283,7 @@ Impact: Enables more granular predictions"
 
 ---
 
-## ✅ Final Checklist
+## Final Checklist
 
 Before sharing with employers:
 
@@ -301,17 +301,17 @@ Before sharing with employers:
 
 ---
 
-## 🎯 Your Repository is Now Employer-Ready! 🎉
+## Your Repository is Now Employer-Ready!
 
 **What Makes This Impressive:**
-- ✅ Complete end-to-end ML project
-- ✅ Professional documentation
-- ✅ High model accuracy (86%)
-- ✅ Multiple models compared
-- ✅ Clean, well-organized code
-- ✅ Beautiful visualizations
-- ✅ Production-ready output
-- ✅ Demonstrates real-world ML skills
+- Complete end-to-end ML project
+- Professional documentation
+- High model accuracy (86%)
+- Multiple models compared
+- Clean, well-organized code
+- Beautiful visualizations
+- Production-ready output
+- Demonstrates real-world ML skills
 
 **This project showcases:**
 - Data cleaning & preprocessing
@@ -326,4 +326,4 @@ Before sharing with employers:
 
 **Need Help?** Check GitHub's documentation: https://docs.github.com/en/get-started
 
-**Good luck with your job search! 🚀**
+**Good luck with your job search! **

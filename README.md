@@ -1,17 +1,17 @@
-# 🚴 Predicting Bicycle Rental Demand - Machine Learning Project
+# Predicting Bicycle Rental Demand - Machine Learning Project
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3.0-orange.svg)](https://scikit-learn.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Status](https://img.shields.io/badge/Status-Complete-success.svg)]()
 
-## 🎯 Project Overview
+## Project Overview
 
 A comprehensive **Data Science capstone project** that predicts bicycle rental demand in Washington DC based on weather conditions and temporal patterns. The project achieves **86.25% prediction accuracy (R²)** using a tuned Random Forest model.
 
 **Key Achievement:** Production-ready machine learning model capable of forecasting daily bike rental demand with an average error of ~498 bikes per day.
 
-## 📊 Results at a Glance
+## Results at a Glance
 
 | Metric | Value |
 |--------|-------|
@@ -22,17 +22,17 @@ A comprehensive **Data Science capstone project** that predicts bicycle rental d
 | **Training Time** | ~60 seconds |
 | **Models Compared** | 7 algorithms |
 
-## 🔑 Key Features
+## Key Features
 
-- ✅ **Complete ML Pipeline:** Data cleaning → EDA → Feature engineering → Model training → Evaluation
-- ✅ **Multiple Algorithms:** Compared 7 different machine learning models
-- ✅ **Feature Engineering:** Created 13 engineered features including rolling averages, lagged features, and cyclical encodings
-- ✅ **Hyperparameter Tuning:** GridSearchCV with 5-fold cross-validation
-- ✅ **Professional Visualizations:** 9 high-resolution charts (300 DPI)
-- ✅ **Production Ready:** Saved model ready for deployment (5.3 MB)
-- ✅ **Comprehensive Documentation:** 5 detailed markdown files
+- **Complete ML Pipeline:** Data cleaning → EDA → Feature engineering → Model training → Evaluation
+- **Multiple Algorithms:** Compared 7 different machine learning models
+- **Feature Engineering:** Created 13 engineered features including rolling averages, lagged features, and cyclical encodings
+- **Hyperparameter Tuning:** GridSearchCV with 5-fold cross-validation
+- **Professional Visualizations:** 9 high-resolution charts (300 DPI)
+- **Production Ready:** Saved model ready for deployment (5.3 MB)
+- **Comprehensive Documentation:** 5 detailed markdown files
 
-## 📈 Dataset
+## Dataset
 The dataset contains **731 daily records** (2011-2012) with weather information:
 - **Temperature** (normalized & denormalized to °C)
 - **Humidity** (0-100%)
@@ -41,22 +41,22 @@ The dataset contains **731 daily records** (2011-2012) with weather information:
 - **Temporal features** (Season, month, weekday)
 - **Target variable:** Total bike rentals (22 - 8,714 per day)
 
-## 🏗️ Project Architecture
+## Project Architecture
 
 ```
 predicting.bicycle.rental/
-├── 📄 complete_analysis.py          # Complete automated analysis (all 6 steps)
-├── 📄 RESULTS.md                    # Detailed results & performance metrics
-├── 📄 INDEX.md                      # Complete project index
-├── 📄 QUICK_START.md                # Quick start guide
-├── 📄 PROJECT_SUMMARY.md            # Project overview
-├── 📄 requirements.txt              # Python dependencies
-├── 📄 LICENSE                       # MIT License
+├── complete_analysis.py          # Complete automated analysis (all 6 steps)
+├── RESULTS.md                    # Detailed results & performance metrics
+├── INDEX.md                      # Complete project index
+├── QUICK_START.md                # Quick start guide
+├── PROJECT_SUMMARY.md            # Project overview
+├── requirements.txt              # Python dependencies
+├── LICENSE                       # MIT License
 │
-├── 📊 day.csv                       # Daily rental data (731 records)
-├── 📊 hour.csv                      # Hourly data (17,379 records)
+├── day.csv                       # Daily rental data (731 records)
+├── hour.csv                      # Hourly data (17,379 records)
 │
-├── 📁 visualizations/               # 9 professional charts (300 DPI)
+├── visualizations/               # 9 professional charts (300 DPI)
 │   ├── 01_target_distribution.png
 │   ├── 02_correlation_heatmap.png
 │   ├── 03_weather_analysis.png
@@ -67,14 +67,14 @@ predicting.bicycle.rental/
 │   ├── 08_prediction_vs_actual.png
 │   └── 09_residuals.png
 │
-├── 📁 models/
+├── models/
 │   └── best_model_random_forest.pkl # Production-ready model (5.3 MB)
 │
-├── 📁 data/                         # Organized data storage
-└── 📁 notebooks/                    # Jupyter notebooks
+├── data/                         # Organized data storage
+└── notebooks/                    # Jupyter notebooks
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 ```bash
@@ -93,11 +93,11 @@ python complete_analysis.py
 ```
 
 **Output:**
-- ✅ Trains 7 machine learning models
-- ✅ Generates 9 visualizations
-- ✅ Saves best model to `models/`
-- ✅ Prints comprehensive results
-- ⏱️ Runtime: ~60 seconds
+- Trains 7 machine learning models
+- Generates 9 visualizations
+- Saves best model to `models/`
+- Prints comprehensive results
+- Runtime: ~60 seconds
 
 ### Load Trained Model
 ```python
@@ -148,21 +148,21 @@ predictions = model.predict(X_new)
 - Discuss strengths and weaknesses
 - Provide recommendations
 
-## 🔬 Methodology
+## Methodology
 
-### 1. Data Preparation ✅
+### 1. Data Preparation
 - Loaded and validated 731 daily records
 - Zero missing values or duplicates
 - Transformed and denormalized weather features
 - Created categorical labels for better interpretation
 
-### 2. Exploratory Data Analysis ✅
+### 2. Exploratory Data Analysis
 - Comprehensive correlation analysis (14 features)
 - Weather impact visualization
 - Seasonal pattern identification
 - Temporal trend analysis (daily, monthly, weekly)
 
-### 3. Feature Engineering ✅
+### 3. Feature Engineering
 **Created 13 new features:**
 - Rolling averages (3-day, 7-day for temperature & humidity)
 - Lagged features (1-day, 7-day rental counts)
@@ -171,7 +171,7 @@ predictions = model.predict(X_new)
 - Weather comfort index
 - Binary indicators
 
-### 4. Model Development ✅
+### 4. Model Development
 **Trained and evaluated 7 models:**
 1. Linear Regression
 2. Ridge Regression
@@ -179,22 +179,22 @@ predictions = model.predict(X_new)
 4. Decision Tree
 5. Random Forest
 6. Gradient Boosting
-7. Random Forest (Tuned) ⭐
+7. Random Forest (Tuned)
 
 **Data split:** 80% training (584 samples) / 20% testing (147 samples)
 
-### 5. Model Refinement ✅
+### 5. Model Refinement
 - GridSearchCV hyperparameter optimization
 - 5-fold cross-validation
 - Feature importance analysis
 - Model persistence for deployment
 
-### 6. Evaluation & Conclusions ✅
+### 6. Evaluation & Conclusions
 - Comprehensive model comparison
 - Residual analysis
 - Business insights and recommendations
 
-## 📊 Key Findings
+## Key Findings
 
 ### Top Predictive Features
 1. **Previous day's rentals** (63.42% importance) - Strong day-to-day continuity
@@ -204,23 +204,23 @@ predictions = model.predict(X_new)
 5. **"Feels like" temperature** (3.67%)
 
 ### Weather Impact
-- ☀️ **Clear weather:** 4,876 rentals/day (+63% vs rainy days)
-- 🌫️ **Mist/Cloudy:** 4,035 rentals/day
-- 🌧️ **Rain/Snow:** 1,804 rentals/day
+- **Clear weather:** 4,876 rentals/day (+63% vs rainy days)
+- **Mist/Cloudy:** 4,035 rentals/day
+- **Rain/Snow:** 1,804 rentals/day
 
 ### Seasonal Patterns
-- 🍂 **Fall:** 5,644 rentals/day (PEAK - +117% vs Spring)
-- ☀️ **Summer:** 5,360 rentals/day
-- ❄️ **Winter:** 4,728 rentals/day
-- 🌸 **Spring:** 2,604 rentals/day (LOWEST)
+- **Fall:** 5,644 rentals/day (PEAK - +117% vs Spring)
+- **Summer:** 5,360 rentals/day
+- **Winter:** 4,728 rentals/day
+- **Spring:** 2,604 rentals/day (LOWEST)
 
-## 🎯 Business Impact
+## Business Impact
 
 **Potential Applications:**
-- 📈 **Demand Forecasting:** Predict next-day rental needs with 86% accuracy
-- 🚴 **Fleet Optimization:** Reduce bike shortages/surplus by ~60%
-- 💰 **Cost Reduction:** Optimize redistribution and maintenance scheduling
-- 📊 **Data-Driven Planning:** Evidence-based operational decisions
+- **Demand Forecasting:** Predict next-day rental needs with 86% accuracy
+- **Fleet Optimization:** Reduce bike shortages/surplus by ~60%
+- **Cost Reduction:** Optimize redistribution and maintenance scheduling
+- **Data-Driven Planning:** Evidence-based operational decisions
 
 **ROI Potential:**
 - Lower operational costs through optimized bike distribution
@@ -228,7 +228,7 @@ predictions = model.predict(X_new)
 - Better inventory management
 - Strategic seasonal planning
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 **Languages & Core Libraries:**
 - **Python 3.8+** - Primary programming language
@@ -252,54 +252,54 @@ predictions = model.predict(X_new)
 - Feature Engineering
 - Model Evaluation (R², RMSE, MAE)
 
-## 📁 Documentation
+## Documentation
 
 - **[RESULTS.md](RESULTS.md)** - Detailed performance metrics and insights
 - **[QUICK_START.md](QUICK_START.md)** - Get started in 5 minutes
 - **[PROJECT_SUMMARY.md](PROJECT_SUMMARY.md)** - Comprehensive project overview
 - **[INDEX.md](INDEX.md)** - Complete project index
 
-## 🎓 Skills Demonstrated
+## Skills Demonstrated
 
-- ✅ Data Cleaning & Preprocessing
-- ✅ Exploratory Data Analysis (EDA)
-- ✅ Statistical Analysis & Visualization
-- ✅ Feature Engineering & Selection
-- ✅ Machine Learning Model Development
-- ✅ Hyperparameter Tuning & Optimization
-- ✅ Model Evaluation & Comparison
-- ✅ Production Model Deployment
-- ✅ Technical Documentation
-- ✅ Git Version Control
+- Data Cleaning & Preprocessing
+- Exploratory Data Analysis (EDA)
+- Statistical Analysis & Visualization
+- Feature Engineering & Selection
+- Machine Learning Model Development
+- Hyperparameter Tuning & Optimization
+- Model Evaluation & Comparison
+- Production Model Deployment
+- Technical Documentation
+- Git Version Control
 
-## 🤝 Contributing
+## Contributing
 
 This is a portfolio/capstone project. If you have suggestions or find issues, feel free to open an issue or submit a pull request.
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👤 Author
+## Author
 
 **Omar Essam**
-- 🌐 Portfolio: [https://engomaressam.github.io/predicting.bicycle.rental/](https://engomaressam.github.io/predicting.bicycle.rental/)
-- 💼 LinkedIn: [Add your LinkedIn profile here]
-- 📧 Email: [Add your email here]
-- 🐙 GitHub: [@engomaressam](https://github.com/engomaressam)
+- Portfolio: [https://engomaressam.github.io/predicting.bicycle.rental/](https://engomaressam.github.io/predicting.bicycle.rental/)
+- LinkedIn: [Add your LinkedIn profile here]
+- Email: [Add your email here]
+- GitHub: [@engomaressam](https://github.com/engomaressam)
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Dataset: Washington DC Bike Sharing Dataset
 - Course: Data Science Capstone Project
 - Tools: Python, scikit-learn, pandas, matplotlib, seaborn
 
-## ⭐ Project Status
+## Project Status
 
-**Status:** ✅ Complete & Production Ready  
+**Status:** Complete & Production Ready  
 **Last Updated:** October 2025  
 **Version:** 1.0.0
 
 ---
 
-**If you find this project useful, please consider giving it a star! ⭐**
+**If you find this project useful, please consider giving it a star! **

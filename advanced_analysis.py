@@ -93,7 +93,7 @@ plt.tight_layout()
 plt.savefig('visualizations/10_user_segmentation.png', dpi=300, bbox_inches='tight')
 plt.close()
 
-print("✓ Saved: visualizations/10_user_segmentation.png")
+print("Saved: visualizations/10_user_segmentation.png")
 print(f"\nKey Insights:")
 print(f"  Average Casual Users: {df['casual'].mean():.0f} per day")
 print(f"  Average Registered Users: {df['registered'].mean():.0f} per day")
@@ -187,7 +187,7 @@ plt.tight_layout()
 plt.savefig('visualizations/11_clustering_analysis.png', dpi=300, bbox_inches='tight')
 plt.close()
 
-print("✓ Saved: visualizations/11_clustering_analysis.png")
+print("Saved: visualizations/11_clustering_analysis.png")
 print(f"\nCluster Insights:")
 for cluster in range(optimal_k):
     cluster_data = df[df['cluster'] == cluster]
@@ -237,7 +237,7 @@ test_r2 = r2_score(y_test, y_pred_test)
 test_rmse = np.sqrt(mean_squared_error(y_test, y_pred_test))
 test_mae = mean_absolute_error(y_test, y_pred_test)
 
-print(f"✓ Neural Network Trained")
+print(f"Neural Network Trained")
 print(f"  Architecture: 11 → 100 → 50 → 25 → 1")
 print(f"  Train R²: {train_r2:.4f}")
 print(f"  Test R²: {test_r2:.4f}")
@@ -268,7 +268,7 @@ plt.tight_layout()
 plt.savefig('visualizations/12_neural_network.png', dpi=300, bbox_inches='tight')
 plt.close()
 
-print("✓ Saved: visualizations/12_neural_network.png")
+print("Saved: visualizations/12_neural_network.png")
 
 # ========================================
 # ANALYSIS 4: PRINCIPAL COMPONENT ANALYSIS
@@ -332,7 +332,7 @@ plt.tight_layout()
 plt.savefig('visualizations/13_pca_analysis.png', dpi=300, bbox_inches='tight')
 plt.close()
 
-print("✓ Saved: visualizations/13_pca_analysis.png")
+print("Saved: visualizations/13_pca_analysis.png")
 print(f"\nPCA Insights:")
 print(f"  First 2 components explain: {cumulative_var[1]*100:.2f}% of variance")
 print(f"  First 5 components explain: {cumulative_var[4]*100:.2f}% of variance")
@@ -405,7 +405,7 @@ plt.tight_layout()
 plt.savefig('visualizations/14_advanced_time_series.png', dpi=300, bbox_inches='tight')
 plt.close()
 
-print("✓ Saved: visualizations/14_advanced_time_series.png")
+print("Saved: visualizations/14_advanced_time_series.png")
 
 # Calculate year-over-year growth
 y2011_avg = df[df['yr'] == 0]['cnt'].mean()
@@ -426,14 +426,14 @@ print("\n" + "="*80)
 print(" ADVANCED ANALYSIS COMPLETE")
 print("="*80)
 
-print("\n✓ 5 Advanced Analyses Completed:")
+print("\n5 Advanced Analyses Completed:")
 print("  1. User Segmentation (Casual vs Registered)")
 print("  2. K-Means Clustering (4 clusters identified)")
 print("  3. Neural Network Regression")
 print("  4. Principal Component Analysis (PCA)")
 print("  5. Advanced Time Series Analysis")
 
-print("\n✓ 5 New Visualizations Created:")
+print("\n5 New Visualizations Created:")
 print("  10_user_segmentation.png")
 print("  11_clustering_analysis.png")
 print("  12_neural_network.png")

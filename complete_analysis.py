@@ -44,18 +44,18 @@ print("="*80)
 # Load data
 print("\n1.1 Loading dataset...")
 df = pd.read_csv('day.csv')
-print(f"✓ Dataset loaded successfully!")
+print(f"Dataset loaded successfully!")
 print(f"  Shape: {df.shape[0]} rows × {df.shape[1]} columns")
 
 # Check missing values
 print("\n1.2 Checking for missing values...")
 missing = df.isnull().sum().sum()
-print(f"✓ Total missing values: {missing}")
+print(f"Total missing values: {missing}")
 
 # Check duplicates
 print("\n1.3 Checking for duplicates...")
 duplicates = df.duplicated().sum()
-print(f"✓ Duplicate rows: {duplicates}")
+print(f"Duplicate rows: {duplicates}")
 
 # Data transformation
 print("\n1.4 Transforming data...")
@@ -78,7 +78,7 @@ df_processed['atemp_celsius'] = df_processed['atemp'] * 50 - 16
 df_processed['humidity_percent'] = df_processed['hum'] * 100
 df_processed['windspeed_kmh'] = df_processed['windspeed'] * 67
 
-print("✓ Data transformation completed")
+print("Data transformation completed")
 print(f"\n1.5 Summary statistics for target variable (cnt):")
 print(f"  Mean: {df_processed['cnt'].mean():.2f}")
 print(f"  Median: {df_processed['cnt'].median():.2f}")
@@ -120,7 +120,7 @@ axes[2].grid(True, alpha=0.3)
 plt.tight_layout()
 plt.savefig('visualizations/01_target_distribution.png', dpi=300, bbox_inches='tight')
 plt.close()
-print("✓ Saved: visualizations/01_target_distribution.png")
+print("Saved: visualizations/01_target_distribution.png")
 
 # 2.2 Correlation analysis
 print("\n2.2 Computing correlation matrix...")
@@ -136,7 +136,7 @@ plt.title('Correlation Matrix - All Features', fontweight='bold', fontsize=14, p
 plt.tight_layout()
 plt.savefig('visualizations/02_correlation_heatmap.png', dpi=300, bbox_inches='tight')
 plt.close()
-print("✓ Saved: visualizations/02_correlation_heatmap.png")
+print("Saved: visualizations/02_correlation_heatmap.png")
 
 target_corr = correlation_matrix['cnt'].sort_values(ascending=False)
 print("\n  Top correlations with bike rentals:")
@@ -190,7 +190,7 @@ axes[1, 1].grid(True, alpha=0.3, axis='y')
 plt.tight_layout()
 plt.savefig('visualizations/03_weather_analysis.png', dpi=300, bbox_inches='tight')
 plt.close()
-print("✓ Saved: visualizations/03_weather_analysis.png")
+print("Saved: visualizations/03_weather_analysis.png")
 
 # 2.4 Seasonal patterns
 print("\n2.4 Analyzing seasonal patterns...")
@@ -216,7 +216,7 @@ for i, v in enumerate(season_avg.values):
 plt.tight_layout()
 plt.savefig('visualizations/04_seasonal_patterns.png', dpi=300, bbox_inches='tight')
 plt.close()
-print("✓ Saved: visualizations/04_seasonal_patterns.png")
+print("Saved: visualizations/04_seasonal_patterns.png")
 
 # 2.5 Temporal patterns
 print("\n2.5 Analyzing temporal patterns...")
@@ -252,7 +252,7 @@ axes[2].grid(True, alpha=0.3, axis='y')
 plt.tight_layout()
 plt.savefig('visualizations/05_temporal_patterns.png', dpi=300, bbox_inches='tight')
 plt.close()
-print("✓ Saved: visualizations/05_temporal_patterns.png")
+print("Saved: visualizations/05_temporal_patterns.png")
 
 # ========================================
 # STEP 3: FEATURE ENGINEERING
@@ -294,7 +294,7 @@ df_features['weather_comfort'] = (df_features['temp'] * 0.6 -
 df_features['good_weather'] = ((df_features['weathersit'] == 1) & 
                                 (df_features['temp'] > 0.5)).astype(int)
 
-print(f"✓ Created {len(df_features.columns) - len(df_processed.columns)} new features")
+print(f"Created {len(df_features.columns) - len(df_processed.columns)} new features")
 print(f"  Total features now: {len(df_features.columns)}")
 
 # ========================================
@@ -390,8 +390,8 @@ rf_grid = GridSearchCV(RandomForestRegressor(random_state=42, n_jobs=-1),
                        rf_params, cv=5, scoring='r2', n_jobs=-1, verbose=0)
 rf_grid.fit(X_train, y_train)
 
-print(f"✓ Best parameters: {rf_grid.best_params_}")
-print(f"✓ Best CV R² score: {rf_grid.best_score_:.4f}")
+print(f"Best parameters: {rf_grid.best_params_}")
+print(f"Best CV R² score: {rf_grid.best_score_:.4f}")
 
 # Evaluate tuned model
 best_rf = rf_grid.best_estimator_
@@ -408,7 +408,7 @@ print(f"  Test MAE: {tuned_mae:.2f}")
 # Save best model
 with open('models/best_model_random_forest.pkl', 'wb') as f:
     pickle.dump(best_rf, f)
-print("\n✓ Best model saved to: models/best_model_random_forest.pkl")
+print("\nBest model saved to: models/best_model_random_forest.pkl")
 
 # Feature importance
 print("\n5.3 Feature importance analysis...")
@@ -426,7 +426,7 @@ plt.gca().invert_yaxis()
 plt.tight_layout()
 plt.savefig('visualizations/06_feature_importance.png', dpi=300, bbox_inches='tight')
 plt.close()
-print("✓ Saved: visualizations/06_feature_importance.png")
+print("Saved: visualizations/06_feature_importance.png")
 
 print("\n  Top 10 most important features:")
 for idx, row in feature_importance.head(10).iterrows():
@@ -488,7 +488,7 @@ axes[2].grid(True, alpha=0.3, axis='x')
 plt.tight_layout()
 plt.savefig('visualizations/07_model_comparison.png', dpi=300, bbox_inches='tight')
 plt.close()
-print("\n✓ Saved: visualizations/07_model_comparison.png")
+print("\nSaved: visualizations/07_model_comparison.png")
 
 # Prediction vs Actual
 print("\n6.2 Creating prediction visualizations...")
@@ -505,7 +505,7 @@ plt.grid(True, alpha=0.3)
 plt.tight_layout()
 plt.savefig('visualizations/08_prediction_vs_actual.png', dpi=300, bbox_inches='tight')
 plt.close()
-print("✓ Saved: visualizations/08_prediction_vs_actual.png")
+print("Saved: visualizations/08_prediction_vs_actual.png")
 
 # Residuals plot
 residuals = y_test - y_pred_tuned
@@ -519,7 +519,7 @@ plt.grid(True, alpha=0.3)
 plt.tight_layout()
 plt.savefig('visualizations/09_residuals.png', dpi=300, bbox_inches='tight')
 plt.close()
-print("✓ Saved: visualizations/09_residuals.png")
+print("Saved: visualizations/09_residuals.png")
 
 # Final conclusions
 print("\n" + "="*80)
@@ -530,31 +530,31 @@ best_model_name = comparison_df.iloc[0]['Model']
 best_r2 = comparison_df.iloc[0]['Test R²']
 best_rmse = comparison_df.iloc[0]['RMSE']
 
-print(f"\n✓ Best Model: {best_model_name}")
+print(f"\nBest Model: {best_model_name}")
 print(f"  - R² Score: {best_r2:.4f} ({best_r2*100:.2f}% of variance explained)")
 print(f"  - RMSE: {best_rmse:.2f} bikes")
 print(f"  - MAE: {comparison_df.iloc[0]['MAE']:.2f} bikes")
 
-print("\n✓ Key Findings:")
+print("\nKey Findings:")
 print("  1. Temperature is the strongest predictor of bike rentals")
 print("  2. Bike rentals peak during Fall season")
 print("  3. Clear weather significantly increases bike usage")
 print("  4. Registered users form the majority of rentals")
 print("  5. Rentals show strong temporal patterns (monthly and weekly)")
 
-print("\n✓ Model Strengths:")
+print("\nModel Strengths:")
 print("  - High prediction accuracy (R² > 0.85)")
 print("  - Captures non-linear relationships")
 print("  - Handles multiple features effectively")
 print("  - Provides feature importance insights")
 
-print("\n✓ Model Weaknesses:")
+print("\nModel Weaknesses:")
 print("  - May overfit on training data (check train vs test R²)")
 print("  - Limited to historical weather patterns")
 print("  - Cannot predict extreme weather events well")
 print("  - Requires regular retraining with new data")
 
-print("\n✓ Recommendations:")
+print("\nRecommendations:")
 print("  1. Deploy model for daily bike rental predictions")
 print("  2. Monitor model performance regularly")
 print("  3. Retrain model quarterly with new data")
