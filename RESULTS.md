@@ -278,7 +278,6 @@ predicting.bicycle.rental/
 ├── hour.csv                       # Hourly data (for future use)
 ├── requirements.txt               # Dependencies
 ├── README.md                      # Project documentation
-├── PROJECT_SUMMARY.md             # Project overview
 ├── RESULTS.md                     # This file
 │
 ├── visualizations/                # 9 PNG files (300 DPI)

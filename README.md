@@ -47,9 +47,6 @@ The dataset contains **731 daily records** (2011-2012) with weather information:
 predicting.bicycle.rental/
 ├── complete_analysis.py          # Complete automated analysis (all 6 steps)
 ├── RESULTS.md                    # Detailed results & performance metrics
-├── INDEX.md                      # Complete project index
-├── QUICK_START.md                # Quick start guide
-├── PROJECT_SUMMARY.md            # Project overview
 ├── requirements.txt              # Python dependencies
 ├── LICENSE                       # MIT License
 │
@@ -255,9 +252,6 @@ predictions = model.predict(X_new)
 ## Documentation
 
 - **[RESULTS.md](RESULTS.md)** - Detailed performance metrics and insights
-- **[QUICK_START.md](QUICK_START.md)** - Get started in 5 minutes
-- **[PROJECT_SUMMARY.md](PROJECT_SUMMARY.md)** - Comprehensive project overview
-- **[INDEX.md](INDEX.md)** - Complete project index
 
 ## Skills Demonstrated
 
